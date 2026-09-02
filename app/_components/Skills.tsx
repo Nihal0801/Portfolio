@@ -5,8 +5,58 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import React, { useRef } from 'react';
+import {
+    SiBlender,
+    SiC,
+    SiDotnet,
+    SiJavascript,
+    SiMeta,
+    SiPython,
+    SiUnity,
+    SiUnrealengine,
+} from 'react-icons/si';
+import { FaAws, FaGithub, FaJava, FaLinux, FaWordpress } from 'react-icons/fa';
+import { PiDatabaseFill } from 'react-icons/pi';
+import {
+    TbActivityHeartbeat,
+    TbApi,
+    TbAugmentedReality2,
+    TbBoxMultiple,
+    TbBrain,
+    TbChartHistogram,
+    TbCode,
+    TbDeviceGamepad2,
+    TbMathFunction,
+    TbTopologyStar3,
+} from 'react-icons/tb';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
+
+const STACK_ICONS = {
+    Python: SiPython,
+    'C#': SiDotnet,
+    Java: FaJava,
+    JavaScript: SiJavascript,
+    C: SiC,
+    SQL: PiDatabaseFill,
+    MATLAB: TbMathFunction,
+    'AI systems': TbBrain,
+    'Agent orchestration': TbTopologyStar3,
+    'AWS cloud fundamentals': FaAws,
+    'REST APIs': TbApi,
+    'Data analysis': TbChartHistogram,
+    Unity: SiUnity,
+    'Unreal Engine': SiUnrealengine,
+    Blender: SiBlender,
+    Vuforia: TbAugmentedReality2,
+    'Meta Quest': SiMeta,
+    'XR Interaction Toolkit': TbDeviceGamepad2,
+    'Git & GitHub': FaGithub,
+    Linux: FaLinux,
+    'Object-oriented programming': TbBoxMultiple,
+    'Real-time interaction': TbActivityHeartbeat,
+    WordPress: FaWordpress,
+};
 
 const Skills = () => {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -71,19 +121,29 @@ const Skills = () => {
                             </div>
 
                             <div className="sm:col-span-7 flex gap-x-11 gap-y-9 flex-wrap">
-                                {value.map((item) => (
-                                    <div
-                                        className="slide-up flex gap-3.5 items-center leading-none"
-                                        key={item.name}
-                                    >
-                                        <div className="size-10 border border-primary/40 text-primary flex items-center justify-center font-anton text-lg">
-                                            {item.name.charAt(0)}
+                                {value.map((item) => {
+                                    const Icon =
+                                        STACK_ICONS[
+                                            item.name as keyof typeof STACK_ICONS
+                                        ] ?? TbCode;
+
+                                    return (
+                                        <div
+                                            className="slide-up group flex gap-3.5 items-center leading-none"
+                                            key={item.name}
+                                        >
+                                            <div className="size-11 shrink-0 rounded-xl border border-primary/40 bg-primary/5 text-primary flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:text-background group-hover:-translate-y-1">
+                                                <Icon
+                                                    aria-hidden="true"
+                                                    className="size-6"
+                                                />
+                                            </div>
+                                            <span className="text-2xl capitalize">
+                                                {item.name}
+                                            </span>
                                         </div>
-                                        <span className="text-2xl capitalize">
-                                            {item.name}
-                                        </span>
-                                    </div>
-                                ))}
+                                    );
+                                })}
                             </div>
                         </div>
                     ))}
