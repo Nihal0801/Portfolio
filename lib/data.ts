@@ -1,5 +1,9 @@
 import { IProject } from '@/types';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+const projectImage = (filename: string) =>
+    `${basePath}/projects/nihal/${filename}`;
+
 export const GENERAL_INFO = {
     email: 'nihalpatel8880@gmail.com',
     emailSubject: "Let's collaborate on a project",
@@ -106,9 +110,9 @@ export const PROJECTS: IProject[] = [
         description: 'A modular multi-agent AI orchestration platform designed to coordinate models, agents, tools, routing, memory, execution, and evaluation through a unified architecture.',
         role: 'Designing the architecture and building the orchestration layer, with a focus on modularity, model routing, tool use, and observable execution.',
         techStack: ['Python', 'AI Systems', 'Multi-Agent Architecture', 'Cloud'],
-        thumbnail: '/projects/nihal/orbit.svg',
-        longThumbnail: '/projects/nihal/orbit.svg',
-        images: ['/projects/nihal/orbit.svg'],
+        thumbnail: projectImage('orbit.svg'),
+        longThumbnail: projectImage('orbit.svg'),
+        images: [projectImage('orbit.svg')],
         sourceCode: 'https://github.com/Nihal0801/OrbiT',
     },
     {
@@ -118,9 +122,9 @@ export const PROJECTS: IProject[] = [
         description: 'An Unreal Engine research system that dynamically adjusts scene geometry according to a user’s visual attention, exploring better rendering efficiency in immersive environments.',
         role: 'Built the gaze-to-geometry pipeline and evaluated attention signals alongside frame-rate and interaction telemetry during a University of Cincinnati research internship.',
         techStack: ['Unreal Engine', 'Eye Tracking', 'Adaptive Geometry', 'XR'],
-        thumbnail: '/projects/nihal/aage.svg',
-        longThumbnail: '/projects/nihal/aage.svg',
-        images: ['/projects/nihal/aage.svg'],
+        thumbnail: projectImage('aage.svg'),
+        longThumbnail: projectImage('aage.svg'),
+        images: [projectImage('aage.svg')],
         sourceCode: 'https://github.com/Nihal0801/Dynamic-Meshing',
     },
     {
@@ -130,9 +134,9 @@ export const PROJECTS: IProject[] = [
         description: 'An immersive manufacturing training environment combining virtual reality, locomotion, gaze tracking, and real-time performance measurement.',
         role: 'Integrated Unreal Engine, Meta Quest Pro, and KAT VR; captured gaze data and analyzed session performance for immersive training research.',
         techStack: ['Unreal Engine', 'Meta Quest Pro', 'KAT VR', 'Telemetry'],
-        thumbnail: '/projects/nihal/vr-manufacturing.svg',
-        longThumbnail: '/projects/nihal/vr-manufacturing.svg',
-        images: ['/projects/nihal/vr-manufacturing.svg'],
+        thumbnail: projectImage('vr-manufacturing.svg'),
+        longThumbnail: projectImage('vr-manufacturing.svg'),
+        images: [projectImage('vr-manufacturing.svg')],
     },
     {
         title: 'VR CLASSROOM SIMULATION',
@@ -141,9 +145,9 @@ export const PROJECTS: IProject[] = [
         description: 'An immersive classroom simulation with real-time object interaction, animated 3D assets, controller-based input, drawing surfaces, and event-driven system behavior.',
         role: 'Developed the Unity experience, built Blender assets, implemented Meta Quest 3 interaction, and optimized performance on standalone hardware.',
         techStack: ['Unity', 'C#', 'Blender', 'Meta Quest 3'],
-        thumbnail: '/projects/nihal/vr-classroom.svg',
-        longThumbnail: '/projects/nihal/vr-classroom.svg',
-        images: ['/projects/nihal/vr-classroom.svg'],
+        thumbnail: projectImage('vr-classroom.svg'),
+        longThumbnail: projectImage('vr-classroom.svg'),
+        images: [projectImage('vr-classroom.svg')],
         sourceCode: 'https://github.com/Nihal0801/Langsam-418',
     },
     {
@@ -153,9 +157,9 @@ export const PROJECTS: IProject[] = [
         description: 'A marker-based augmented reality application that anchors a 3D Taj Mahal environment to a cube marker and displays real-time weather data.',
         role: 'Built the Unity and Vuforia application, integrated the OpenWeather API, and designed dynamic contextual UI panels.',
         techStack: ['Unity', 'Vuforia', 'OpenWeather API', 'C#'],
-        thumbnail: '/projects/nihal/ar-weather.svg',
-        longThumbnail: '/projects/nihal/ar-weather.svg',
-        images: ['/projects/nihal/ar-weather.svg'],
+        thumbnail: projectImage('ar-weather.svg'),
+        longThumbnail: projectImage('ar-weather.svg'),
+        images: [projectImage('ar-weather.svg')],
         sourceCode: 'https://github.com/Nihal0801/ar-knickknack',
     },
     {
@@ -165,9 +169,9 @@ export const PROJECTS: IProject[] = [
         description: 'An intelligent CPU scheduling visualizer covering FCFS, SJF, SRTF, Round Robin, and Priority scheduling with interactive Gantt charts and performance metrics.',
         role: 'Implemented the scheduling algorithms and built the GTK interface for visualizing turnaround time, waiting time, and algorithm behavior.',
         techStack: ['C', 'GTK', 'Algorithms', 'Data Structures'],
-        thumbnail: '/projects/nihal/schedulx.svg',
-        longThumbnail: '/projects/nihal/schedulx.svg',
-        images: ['/projects/nihal/schedulx.svg'],
+        thumbnail: projectImage('schedulx.svg'),
+        longThumbnail: projectImage('schedulx.svg'),
+        images: [projectImage('schedulx.svg')],
     },
 ];
 
