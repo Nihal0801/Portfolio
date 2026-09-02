@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#202020"/>
+  <g fill="none" stroke="#00ef59" stroke-width="2">
+    <rect x="115" y="220" width="150" height="150"/><path d="M115 220L190 160L265 220M265 220L340 160V310L265 370M190 160H340"/>
+    <path d="M350 265H505"/><path d="M505 265L490 256V274Z"/>
+    <rect x="520" y="190" width="265" height="220"/>
+    <circle cx="600" cy="270" r="35"/><path d="M600 215V195M600 345V325M545 270H525M675 270H655"/>
+  </g>
+  <g fill="#ddd" font-family="Arial, sans-serif"><text x="115" y="410" font-size="16">MARKER + 3D SCENE</text><text x="550" y="370" font-size="16">LIVE WEATHER DATA</text></g>
+  <text x="44" y="56" fill="#ddd" font-family="Arial, sans-serif" font-size="22" font-weight="700">AR KNICK-KNACK</text>
+</svg>

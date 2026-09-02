@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#202020"/>
+  <g fill="none" stroke="#00ef59" stroke-width="2">
+    <path d="M450 170V260M450 340V430M270 300H390M510 300H630"/>
+    <circle cx="450" cy="300" r="46"/>
+    <circle cx="450" cy="120" r="38"/>
+    <circle cx="220" cy="300" r="38"/>
+    <circle cx="680" cy="300" r="38"/>
+    <circle cx="450" cy="480" r="38"/>
+  </g>
+  <g fill="#ddd" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="450" y="307" font-size="24" font-weight="700">ORBIT</text>
+    <text x="450" y="126" font-size="16">ROUTER</text>
+    <text x="220" y="306" font-size="16">AGENTS</text>
+    <text x="680" y="306" font-size="16">MEMORY</text>
+    <text x="450" y="486" font-size="16">TOOLS</text>
+  </g>
+  <text x="44" y="56" fill="#888" font-family="Arial, sans-serif" font-size="15">MULTI-AGENT AI ORCHESTRATION</text>
+</svg>

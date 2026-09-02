@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#202020"/>
+  <g font-family="Arial, sans-serif" font-size="15">
+    <text x="65" y="175" fill="#888">P1</text><text x="65" y="245" fill="#888">P2</text><text x="65" y="315" fill="#888">P3</text><text x="65" y="385" fill="#888">P4</text>
+    <g stroke="#555" fill="none"><path d="M110 150H820M110 220H820M110 290H820M110 360H820M110 430H820"/></g>
+    <g fill="#00ef59"><rect x="120" y="158" width="180" height="28"/><rect x="300" y="228" width="260" height="28"/><rect x="560" y="298" width="110" height="28"/><rect x="670" y="368" width="135" height="28"/></g>
+    <g fill="#202020" text-anchor="middle"><text x="210" y="178">FCFS</text><text x="430" y="248">ROUND ROBIN</text><text x="615" y="318">SRTF</text><text x="737" y="388">PRIORITY</text></g>
+  </g>
+  <text x="44" y="56" fill="#ddd" font-family="Arial, sans-serif" font-size="22" font-weight="700">SCHEDULX · CPU SCHEDULING VISUALIZER</text>
+</svg>

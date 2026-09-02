@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#202020"/>
+  <g fill="none" stroke="#555" stroke-width="1">
+    <path d="M100 450L280 150L450 450ZM280 150L620 170L450 450ZM620 170L790 450L450 450Z"/>
+    <path d="M280 150L365 300L450 450M620 170L535 310L450 450M365 300L535 310M100 450L365 300M790 450L535 310"/>
+  </g>
+  <circle cx="455" cy="318" r="118" fill="none" stroke="#00ef59" stroke-width="3" stroke-dasharray="8 12"/>
+  <circle cx="455" cy="318" r="10" fill="#00ef59"/>
+  <path d="M455 318L675 92" stroke="#00ef59" stroke-width="2"/>
+  <text x="690" y="88" fill="#00ef59" font-family="Arial, sans-serif" font-size="16">GAZE REGION</text>
+  <text x="44" y="56" fill="#ddd" font-family="Arial, sans-serif" font-size="22" font-weight="700">ATTENTION-ADAPTIVE GEOMETRY</text>
+</svg>

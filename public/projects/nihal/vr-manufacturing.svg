@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#202020"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g fill="#292929" stroke="#00ef59" stroke-width="2">
+      <rect x="70" y="250" width="170" height="90"/><rect x="365" y="250" width="170" height="90"/><rect x="660" y="250" width="170" height="90"/>
+    </g>
+    <g fill="#ddd" font-size="17">
+      <text x="155" y="304">GAZE + MOTION</text><text x="450" y="304">VR TRAINING</text><text x="745" y="304">TELEMETRY</text>
+    </g>
+  </g>
+  <g stroke="#00ef59" stroke-width="2" fill="#00ef59"><path d="M240 295H350"/><path d="M350 295L336 287V303Z"/><path d="M535 295H645"/><path d="M645 295L631 287V303Z"/></g>
+  <text x="44" y="56" fill="#ddd" font-family="Arial, sans-serif" font-size="22" font-weight="700">IMMERSIVE MANUFACTURING SYSTEM</text>
+  <text x="450" y="450" text-anchor="middle" fill="#777" font-family="Arial, sans-serif" font-size="15">UNREAL ENGINE · META QUEST PRO · KAT VR</text>
+</svg>

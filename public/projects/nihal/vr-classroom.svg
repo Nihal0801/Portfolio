@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#202020"/>
+  <g fill="none" stroke="#00ef59" stroke-width="2">
+    <rect x="170" y="130" width="560" height="340"/>
+    <path d="M170 230H730M340 230V470M560 230V470"/>
+    <circle cx="450" cy="350" r="50"/><path d="M405 350H495M450 305V395"/>
+  </g>
+  <g fill="#ddd" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">
+    <text x="255" y="200">3D ASSETS</text><text x="450" y="200">INPUT</text><text x="645" y="200">EVENTS</text>
+    <text x="255" y="360">UNITY</text><text x="645" y="360">QUEST 3</text>
+  </g>
+  <text x="44" y="56" fill="#ddd" font-family="Arial, sans-serif" font-size="22" font-weight="700">VR CLASSROOM SIMULATION</text>
+</svg>
