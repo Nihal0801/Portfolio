@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import React, { useRef } from 'react';
+import type { IconType } from 'react-icons';
 import {
     SiBlender,
     SiC,
@@ -15,7 +16,7 @@ import {
     SiUnity,
     SiUnrealengine,
 } from 'react-icons/si';
-import { FaAws, FaGithub, FaJava, FaLinux, FaWordpress } from 'react-icons/fa';
+import { FaAws, FaGitAlt, FaJava, FaLinux, FaWordpress } from 'react-icons/fa';
 import { PiDatabaseFill } from 'react-icons/pi';
 import {
     TbActivityHeartbeat,
@@ -32,31 +33,38 @@ import {
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-const STACK_ICONS = {
-    Python: SiPython,
-    'C#': SiDotnet,
-    Java: FaJava,
-    JavaScript: SiJavascript,
-    C: SiC,
-    SQL: PiDatabaseFill,
-    MATLAB: TbMathFunction,
-    'AI systems': TbBrain,
-    'Agent orchestration': TbTopologyStar3,
-    'AWS cloud fundamentals': FaAws,
-    'REST APIs': TbApi,
-    'Data analysis': TbChartHistogram,
-    Unity: SiUnity,
-    'Unreal Engine': SiUnrealengine,
-    Blender: SiBlender,
-    Vuforia: TbAugmentedReality2,
-    'Meta Quest': SiMeta,
-    'XR Interaction Toolkit': TbDeviceGamepad2,
-    'Git & GitHub': FaGithub,
-    Linux: FaLinux,
-    'Object-oriented programming': TbBoxMultiple,
-    'Real-time interaction': TbActivityHeartbeat,
-    WordPress: FaWordpress,
+type StackIcon = {
+    icon: IconType;
+    color: string;
 };
+
+const STACK_ICONS: Record<string, StackIcon> = {
+    Python: { icon: SiPython, color: '#3776AB' },
+    'C#': { icon: SiDotnet, color: '#512BD4' },
+    Java: { icon: FaJava, color: '#F89820' },
+    JavaScript: { icon: SiJavascript, color: '#F7DF1E' },
+    C: { icon: SiC, color: '#659AD2' },
+    SQL: { icon: PiDatabaseFill, color: '#4479A1' },
+    MATLAB: { icon: TbMathFunction, color: '#E16737' },
+    'AI systems': { icon: TbBrain, color: '#A78BFA' },
+    'Agent orchestration': { icon: TbTopologyStar3, color: '#22D3EE' },
+    'AWS cloud fundamentals': { icon: FaAws, color: '#FF9900' },
+    'REST APIs': { icon: TbApi, color: '#00C7B7' },
+    'Data analysis': { icon: TbChartHistogram, color: '#4CC9F0' },
+    Unity: { icon: SiUnity, color: '#FFFFFF' },
+    'Unreal Engine': { icon: SiUnrealengine, color: '#FFFFFF' },
+    Blender: { icon: SiBlender, color: '#F5792A' },
+    Vuforia: { icon: TbAugmentedReality2, color: '#7AC943' },
+    'Meta Quest': { icon: SiMeta, color: '#0668E1' },
+    'XR Interaction Toolkit': { icon: TbDeviceGamepad2, color: '#A78BFA' },
+    'Git & GitHub': { icon: FaGitAlt, color: '#F05032' },
+    Linux: { icon: FaLinux, color: '#FCC624' },
+    'Object-oriented programming': { icon: TbBoxMultiple, color: '#3B82F6' },
+    'Real-time interaction': { icon: TbActivityHeartbeat, color: '#EF4444' },
+    WordPress: { icon: FaWordpress, color: '#21759B' },
+};
+
+const FALLBACK_ICON: StackIcon = { icon: TbCode, color: '#6FE08F' };
 
 const Skills = () => {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -122,20 +130,19 @@ const Skills = () => {
 
                             <div className="sm:col-span-7 flex gap-x-11 gap-y-9 flex-wrap">
                                 {value.map((item) => {
-                                    const Icon =
-                                        STACK_ICONS[
-                                            item.name as keyof typeof STACK_ICONS
-                                        ] ?? TbCode;
+                                    const { icon: Icon, color } =
+                                        STACK_ICONS[item.name] ?? FALLBACK_ICON;
 
                                     return (
                                         <div
                                             className="slide-up group flex gap-3.5 items-center leading-none"
                                             key={item.name}
                                         >
-                                            <div className="size-11 shrink-0 rounded-xl border border-primary/40 bg-primary/5 text-primary flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:text-background group-hover:-translate-y-1">
+                                            <div className="size-10 shrink-0 flex items-center justify-center">
                                                 <Icon
                                                     aria-hidden="true"
-                                                    className="size-6"
+                                                    className="size-9 transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-110"
+                                                    style={{ color }}
                                                 />
                                             </div>
                                             <span className="text-2xl capitalize">
