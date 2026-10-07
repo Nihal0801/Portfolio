@@ -5,7 +5,9 @@
   "packageManager": "pnpm@11.25.0",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "pnpm sync:github && next build",
+    "sync:github": "node --experimental-strip-types scripts/sync-github-projects.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
     "start": "next start",
     "lint": "next lint",
     "svgr:icons": "svgr --title-prop --no-dimensions --typescript -d components/icons -- components/icons/svgs"

@@ -1,0 +1,209 @@
+{
+  "fetchedAt": 1791407512069,
+  "repositories": [
+    {
+      "id": 1409022347,
+      "name": "05-prj-intel-event-check-in",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "disabled": false,
+      "description": null,
+      "homepage": null,
+      "language": "CSS",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-07T15:43:46Z"
+    },
+    {
+      "id": 1390908170,
+      "name": "cs5165-project2-postmark-aws",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "description": null,
+      "homepage": null,
+      "language": "Python",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-27T14:01:14Z"
+    },
+    {
+      "id": 1375297718,
+      "name": "03-prj-intel-localization",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "description": "Intel sustainability journey with English/Arabic localization, Bootstrap and accessible interactions.",
+      "homepage": null,
+      "language": "HTML",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-18T05:52:54Z"
+    },
+    {
+      "id": 1368962308,
+      "name": "student-country-dashboard",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "description": null,
+      "homepage": null,
+      "language": "HTML",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-13T22:20:20Z"
+    },
+    {
+      "id": 1365270670,
+      "name": "02-prj-intel-sustainability",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "disabled": false,
+      "description": null,
+      "homepage": null,
+      "language": "HTML",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-11T04:03:29Z"
+    },
+    {
+      "id": 1355110634,
+      "name": "Portfolio",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "description": null,
+      "homepage": null,
+      "language": "TypeScript",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-04T03:36:42Z"
+    },
+    {
+      "id": 1354956588,
+      "name": "OrbiT",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "description": null,
+      "homepage": null,
+      "language": "Python",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-02T18:27:45Z"
+    },
+    {
+      "id": 1091144774,
+      "name": "Nihal0801",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "description": null,
+      "homepage": null,
+      "language": null,
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-02T16:43:27Z"
+    },
+    {
+      "id": 1246891878,
+      "name": "Dynamic-Meshing",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "description": null,
+      "homepage": null,
+      "language": null,
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-22T20:58:06Z"
+    },
+    {
+      "id": 1225939894,
+      "name": "Langsam-418",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "disabled": false,
+      "description": null,
+      "homepage": null,
+      "language": null,
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-04-27T04:20:30Z"
+    },
+    {
+      "id": 1180463954,
+      "name": "ar-knickknack",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "disabled": false,
+      "description": null,
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-03-13T15:43:38Z"
+    },
+    {
+      "id": 1105491183,
+      "name": "forage-midas",
+      "owner": {
+        "login": "Nihal0801"
+      },
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "disabled": false,
+      "description": "Project repo for the JPMC Advanced Software Engineering Forage program",
+      "homepage": null,
+      "language": null,
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2024-08-15T03:23:58Z"
+    }
+  ]
+}

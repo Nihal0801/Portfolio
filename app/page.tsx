@@ -6,6 +6,7 @@ import ProjectList from './_components/ProjectList';
 import Focus from './_components/Focus';
 import Education from './_components/Education';
 import Recognition from './_components/Recognition';
+import GitHubProjectFeed from './_components/GitHubProjectFeed';
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <Education />
             <Experiences />
             <ProjectList />
+            <GitHubProjectFeed />
             <Recognition />
         </div>
     );
